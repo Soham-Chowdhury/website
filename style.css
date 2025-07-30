@@ -1,0 +1,163 @@
+/* Base styles (mobile-first) */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f3f6fa;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 860px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+  font-size: 2.4em;
+  margin-bottom: 8px;
+  color: #1a1a1a;
+}
+
+header .tagline {
+  font-style: italic;
+  color: #444;
+  font-size: 1em;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 25px 0;
+}
+
+nav a {
+  background-color: #002942;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 16px;
+  border-radius: 25px;
+  font-size: 0.95em;
+  transition: 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #004060;
+}
+
+/* Sections */
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  border-left: 4px solid #002942;
+  padding-left: 12px;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #002942;
+}
+
+/* Links */
+a {
+  color: #002942;
+  text-decoration: underline;
+}
+a:hover {
+  color: #004060;
+}
+
+/* Music Touch: subtle background gradient */
+body::before {
+  content: '';
+  position: fixed;
+  top: -100px;
+  left: -100px;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(ellipse at center, rgba(0, 41, 66, 0.08), transparent);
+  z-index: -1;
+}
+
+/* Feedback Box */
+.feedback {
+  background-color: #f0f4f8;
+  padding: 14px 20px;
+  border-left: 4px solid #002942;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  font-style: italic;
+  color: #555;
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.gallery img {
+  width: 100%;
+  max-width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.04);
+}
+
+/* Contact Info */
+.contact a {
+  color: #002942;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  font-size: 0.85em;
+  color: #777;
+  border-top: 1px solid #ddd;
+  padding: 30px 20px 10px;
+  margin-top: 50px;
+}
+
+/* Responsive Enhancements */
+@media (min-width: 600px) {
+  header h1 {
+    font-size: 3em;
+  }
+
+  nav a {
+    font-size: 1em;
+    padding: 12px 20px;
+  }
+
+  section h2 {
+    font-size: 1.7em;
+  }
+}
