@@ -212,17 +212,16 @@ So join me on this exhilarating musical journey, as I continue to explore, innov
   <footer>
     <p>&copy; 2025 Soham Chowdhury. All rights reserved.</p>
   </footer>
-  <script>
-  document.querySelectorAll(".toggle-btn").forEach(btn => {
-    btn.addEventListener("click", () => {
-      const desc = btn.nextElementSibling;
-      const icon = btn.querySelector(".icon");
+ <script>
+  const headers = document.querySelectorAll(".accordion-header");
 
-      const isOpen = desc.style.display === "block";
-      desc.style.display = isOpen ? "none" : "block";
-      icon.textContent = isOpen ? "+" : "−";
+  headers.forEach(header => {
+    header.addEventListener("click", () => {
+      const body = header.nextElementSibling;
+      body.style.display = body.style.display === "block" ? "none" : "block";
     });
   });
 </script>
+
 </body>
 </html>
