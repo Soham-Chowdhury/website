@@ -108,49 +108,39 @@ In this vast ocean of music, I sail through diverse genres, always on the lookou
 So join me on this exhilarating musical journey, as I continue to explore, innovate, and share my love for music with the world. Let's create something extraordinary together!.</p>
   </section>
 
-<section id="myservices">
+<section>
   <h2>My Services</h2>
-    <p>I offer a range of audio services to elevate your sound according to your vision. My service includes-</p>
-  <div class="service-item">
-    <button class="toggle-btn">
-      <span class="title">Mixing & Mastering</span>
-      <span class="icon">+</span>
-    </button>
-    <div class="service-description">
-      Radio-ready sound with balance and clarity.
+  <p>I offer a range of audio services to elevate your sound according to your vision. My service includes-</p>
+
+  <div class="accordion">
+    <button class="accordion-header">Mixing & Mastering +</button>
+    <div class="accordion-body">
+      <p>Radio-ready sound with balance and clarity.</p>
     </div>
   </div>
 
-  <div class="service-item">
-    <button class="toggle-btn">
-      <span class="title">Music Production</span>
-      <span class="icon">+</span>
-    </button>
-    <div class="service-description">
-      Full track creation from idea to release.
+  <div class="accordion">
+    <button class="accordion-header">Music Production +</button>
+    <div class="accordion-body">
+      <p>Full track creation from idea to release.</p>
     </div>
   </div>
 
-  <div class="service-item">
-    <button class="toggle-btn">
-      <span class="title">Composition</span>
-      <span class="icon">+</span>
-    </button>
-    <div class="service-description">
-      Original compositions for songs.
+  <div class="accordion">
+    <button class="accordion-header">Composition +</button>
+    <div class="accordion-body">
+      <p>Original compositions for songs.</p>
     </div>
   </div>
 
-  <div class="service-item">
-    <button class="toggle-btn">
-      <span class="title">Vocal Tuning</span>
-      <span class="icon">+</span>
-    </button>
-    <div class="service-description">
-      Clean, expressive vocal correction with a natural feel.
+  <div class="accordion">
+    <button class="accordion-header">Vocal Tuning +</button>
+    <div class="accordion-body">
+      <p>Clean, expressive vocal correction with a natural feel.</p>
     </div>
   </div>
 </section>
+
 
 
   <section id="music">
@@ -213,15 +203,12 @@ So join me on this exhilarating musical journey, as I continue to explore, innov
     <p>&copy; 2025 Soham Chowdhury. All rights reserved.</p>
   </footer>
  <script>
-  const headers = document.querySelectorAll(".accordion-header");
-
-  headers.forEach(header => {
-    header.addEventListener("click", () => {
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
       const body = header.nextElementSibling;
-      body.style.display = body.style.display === "block" ? "none" : "block";
+      body.style.display = body.style.display === 'block' ? 'none' : 'block';
     });
   });
 </script>
-
 </body>
 </html>
