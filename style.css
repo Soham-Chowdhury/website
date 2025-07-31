@@ -225,4 +225,20 @@ footer {
   display: none;
   border-top: 1px solid #ccc;
 }
+html {
+  scroll-behavior: smooth;
+}
 
+.back-to-top {
+  display: inline-block;
+  background-color: #002942;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #ffffff;
+}
