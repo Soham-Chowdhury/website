@@ -108,16 +108,50 @@ In this vast ocean of music, I sail through diverse genres, always on the lookou
 So join me on this exhilarating musical journey, as I continue to explore, innovate, and share my love for music with the world. Let's create something extraordinary together!.</p>
   </section>
 
-  <section id="myservices">
+<section class="services">
   <h2>My Services</h2>
-  <ul>
     <p>I offer a range of audio services to elevate your sound and vision:</p>
-    <li> <strong>Mixing & Mastering</strong> – Radio-ready sound with balance and clarity.</li>
-    <li> <strong>Music Production</strong> – Full track creation from idea to release.</li>
-    <li> <strong>Composition</strong> – Original compositions for songs.</li>
-    <li><strong>Vocal Tuning</strong> – Clean, expressive vocal correction with a natural feel.</li>
-  </ul>
+  <div class="service-item">
+    <button class="toggle-btn">
+      <span class="title">Mixing & Mastering</span>
+      <span class="icon">+</span>
+    </button>
+    <div class="service-description">
+      Radio-ready sound with balance and clarity.
+    </div>
+  </div>
+
+  <div class="service-item">
+    <button class="toggle-btn">
+      <span class="title">Music Production</span>
+      <span class="icon">+</span>
+    </button>
+    <div class="service-description">
+      Full track creation from idea to release.
+    </div>
+  </div>
+
+  <div class="service-item">
+    <button class="toggle-btn">
+      <span class="title">Composition</span>
+      <span class="icon">+</span>
+    </button>
+    <div class="service-description">
+      Original compositions for songs.
+    </div>
+  </div>
+
+  <div class="service-item">
+    <button class="toggle-btn">
+      <span class="title">Vocal Tuning</span>
+      <span class="icon">+</span>
+    </button>
+    <div class="service-description">
+      Clean, expressive vocal correction with a natural feel.
+    </div>
+  </div>
 </section>
+
 
   <section id="music">
     <h2>Find My Music</h2>
@@ -134,7 +168,7 @@ So join me on this exhilarating musical journey, as I continue to explore, innov
   <section id="personal">
     <h2>Latest personal Works</h2>
     <p>Original compositions, solo projects, sound design experiments, and collaborations released under my name or artist alias. Few are-</p>
-    <li><a href=https://youtu.be/1YavThhac8Q?si=W5y1lknnWILcNDLh>On youTube</a></li>
+    <li><a href=https://www.youtube.com/channel/UCs3F98tBiyfMWbMDn2Sz7Qw target="_blank">On youTube</a></li>
     <li><a href=https://www.instagram.com/reel/DL6gjDeSmKA/?utm_source=ig_web_button_share_sheet target="_blank">On instagram</a></li>
   </section>
 
@@ -148,7 +182,7 @@ So join me on this exhilarating musical journey, as I continue to explore, innov
   <section id="feedback">
     <h2>Client Feedback</h2>
     <div class="feedback">
-      <p>"Working with Soham has been an amazing journey. I am a beginner in this domain, but with his help and support, we were finally able to complete the project and I and truley happy for his invaluable support and advice. I have also learned so much from him throughout this journey. I really appriciate both his work and his personality. Thank you very much!" — Golak Parida (Lyricist, Composer)</p>
+      <p>"Working with Soham has been an amazing journey. I am a begineer in this domain, but with his help and support, we were finally able to complete the project and I and truley happy for his invaluable support and advice. I have also learned so much from him throughout this journey. I really appriciate both his work and his personality. Thank you very much!" — Golak Parida (Lyricist, Composer)</p>
     </div>
     <div class="feedback">
       <p>"Hey everyone, Trust me the experience of making music along with soham was really nice like he has the professionalism one needs and that along with his cooperative skills. He cooperates really well and gives you a fantastic personalised experince." 
@@ -159,13 +193,13 @@ So join me on this exhilarating musical journey, as I continue to explore, innov
   <section id="gallery">
   <h2>Photo Gallery</h2>
   <div class="gallery">
-    <img src="b1.jpg" alt="Performance">
-    <img src="_MG_4330.jpg" alt="Studio Session">
-    <img src="RSP_6219.jpg" alt="Behind the Scenes">
-    <img src="Picsart_25-03-10_03-21-23-669.jpg" alt="Creative Edit">
-
+    <img src="C:\Users\SOHAM\Downloads\Website\Images\_MG_4330.jpg" alt="Performance">
+    <img src="C:\Users\SOHAM\Downloads\Website\Images\b1.jpg" alt="Studio Session">
+    <img src="C:\Users\SOHAM\Downloads\Website\Images\RSP_6219.jpg" alt="Behind the Scenes">
+    <img src="C:\Users\SOHAM\Downloads\Website\Images\Picsart_25-03-10_03-21-23-669.jpg" alt="Creative Edit">
   </div>
 </section>
+
 
   <section id="contact">
     <h2>Contact Info</h2>
@@ -177,5 +211,17 @@ So join me on this exhilarating musical journey, as I continue to explore, innov
   <footer>
     <p>&copy; 2025 Soham Chowdhury. All rights reserved.</p>
   </footer>
+  <script>
+  document.querySelectorAll(".toggle-btn").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const desc = btn.nextElementSibling;
+      const icon = btn.querySelector(".icon");
+
+      const isOpen = desc.style.display === "block";
+      desc.style.display = isOpen ? "none" : "block";
+      icon.textContent = isOpen ? "+" : "−";
+    });
+  });
+</script>
 </body>
 </html>
