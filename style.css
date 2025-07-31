@@ -193,37 +193,3 @@ footer {
   display: none;
   border-top: 1px solid #ccc;
 }
-.service-description {
-  display: none;
-  padding: 10px 15px;
-  background-color: #f9f9f9;
-  border-left: 3px solid #1f1f1f;
-  border-radius: 0 0 10px 10px;
-  font-size: 0.95em;
-}
-.service-item {
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-.toggle-btn {
-  width: 100%;
-  text-align: left;
-  padding: 14px 20px;
-  font-size: 1em;
-  font-weight: 600;
-  background-color: #1f1f1f;
-  color: #fff;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.toggle-btn:hover {
-  background-color: #3f3f3f;
-}
-
