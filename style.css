@@ -161,3 +161,35 @@ footer {
     font-size: 1.7em;
   }
 }
+/* Accordion Styles */
+.accordion {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.accordion-header {
+  width: 100%;
+  background-color: #002942;
+  color: #fff;
+  padding: 14px 20px;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: #004060;
+}
+
+.accordion-body {
+  padding: 15px 20px;
+  background-color: #f9f9f9;
+  display: none;
+  border-top: 1px solid #ccc;
+}
