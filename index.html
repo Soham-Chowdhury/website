@@ -232,15 +232,29 @@ So join me on this exhilarating musical journey, as I continue to explore, innov
     header.addEventListener('click', () => {
       const body = header.nextElementSibling;
       const icon = header.querySelector('.accordion-icon');
-      const isOpen = body.style.display === 'block';
 
-      body.style.display = isOpen ? 'none' : 'block';
-      icon.textContent = isOpen ? '+' : '−';
+      const isOpen = body.style.maxHeight;
+
+    
+      document.querySelectorAll('.accordion-body').forEach(body => {
+        body.style.maxHeight = null;
+      });
+      document.querySelectorAll('.accordion-icon').forEach(icon => {
+        icon.textContent = '+';
+      });
+
+    
+      if (!isOpen) {
+        body.style.maxHeight = body.scrollHeight + "px";
+        icon.textContent = '−';
+      }
     });
   });
 </script>
+
 </body>
 </html>
+
 
 
 
