@@ -242,6 +242,13 @@ html {
 .back-to-top:hover {
   background-color: #ffffff;
 }
+.accordion {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 .accordion-header {
   display: flex;
   justify-content: space-between;
@@ -273,4 +280,9 @@ html {
   font-weight: bold;
 }
 
-
+.accordion-body {
+  padding: 15px 20px;
+  background-color: #f9f9f9;
+  display: none;
+  border-top: 1px solid #ccc;
+}
