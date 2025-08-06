@@ -242,3 +242,35 @@ html {
 .back-to-top:hover {
   background-color: #ffffff;
 }
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: #002942;
+  color: #fff;
+  padding: 14px 20px;
+  text-align: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  border-radius: 10px;
+}
+
+.accordion-header:hover {
+  background-color: #004060;
+}
+
+.accordion-title {
+  flex-grow: 1;
+}
+
+.accordion-icon {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+
