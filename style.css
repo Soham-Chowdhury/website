@@ -294,6 +294,47 @@ html {
   padding: 0 20px;
   border-top: 1px solid #ccc;
 }
+/* Horizontal Scroll Gallery */
+.gallery-scroll {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px 10px;
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar for cleaner look */
+.gallery-scroll::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gallery-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.gallery-scroll::-webkit-scrollbar-thumb {
+  background: #002942;
+  border-radius: 10px;
+}
+
+/* Images */
+.gallery-scroll img {
+  height: 320px;
+  width: auto;
+  border-radius: 14px;
+  object-fit: cover;
+  flex-shrink: 0;
+  transition: transform 0.3s ease,
+              box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+
+/* Hover Effect */
+.gallery-scroll img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
 
 
 
